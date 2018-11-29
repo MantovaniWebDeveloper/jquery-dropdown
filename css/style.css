@@ -30,3 +30,34 @@ header div {
   font-size: 30px;
   cursor: pointer;
 }
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  width:400px;
+  text-align: center;
+}
+.elemento {
+ border-bottom: 1px solid lightgrey;
+ padding: 20px;
+}
+.elemento > a {
+ color: fff;
+}
+.wrap-center img {
+  max-width: 100%;
+  height: 60px;
+}
+.wrapRight{
+  text-align: right;
+}
+.contact {
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+
+}
+.contact span {
+ margin-right: 10px;
+ font-size: 20px;
+}
