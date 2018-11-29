@@ -33,16 +33,34 @@ header div {
 nav {
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  background-color: #000;
   width:400px;
   text-align: center;
 }
 .elemento {
+ position: relative;
  border-bottom: 1px solid lightgrey;
  padding: 20px;
 }
-.elemento > a {
- color: fff;
+.elemento  a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.elemento  a:hover {
+  color: #f3c600;
+}
+.dropDownMenu {
+  position: absolute;
+  top:0;
+  left: 400px;
+  background-color: grey;
+  width: 400px;
+  height: auto;
+}
+.dropDownMenu .dropDownItem {
+  padding: 20px;
+
 }
 .wrap-center img {
   max-width: 100%;
@@ -55,7 +73,6 @@ nav {
   color: #fff;
   width: 100%;
   justify-content: center;
-
 }
 .contact span {
  margin-right: 10px;
