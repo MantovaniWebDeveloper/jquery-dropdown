@@ -31,26 +31,29 @@ header div {
   cursor: pointer;
 }
 nav {
-  display: flex;
-  flex-direction: column;
+  display: none;
   background-color: #000;
   width:400px;
+  height: auto;
   text-align: center;
 }
 .elemento {
  position: relative;
- border-bottom: 1px solid lightgrey;
  padding: 20px;
+ width: 400px;
+ height: 100%;
 }
-.elemento  a {
+.elemento a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  width: 100%;
 }
-.elemento  a:hover {
-  color: #f3c600;
+.elemento:hover {
+  background-color: #f3c600;
 }
 .dropDownMenu {
+  display: none;
   position: absolute;
   top:0;
   left: 400px;
@@ -60,7 +63,9 @@ nav {
 }
 .dropDownMenu .dropDownItem {
   padding: 20px;
-
+}
+.dropDownItem:hover {
+  background-color: #f3c600;
 }
 .wrap-center img {
   max-width: 100%;
