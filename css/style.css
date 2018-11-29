@@ -14,7 +14,7 @@ body{
   background: rgb(60, 7, 20);
 }
 header {
-  height: 80px;
+  height: 10vh;
   width: 100%;
   background-color: black;
 }
@@ -36,6 +36,9 @@ nav {
   width:400px;
   height: auto;
   text-align: center;
+  z-index:10;
+   position:relative;
+
 }
 .elemento {
  position: relative;
@@ -82,4 +85,17 @@ nav {
 .contact span {
  margin-right: 10px;
  font-size: 20px;
+}
+#wrapImg {
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+  left: 48px;
+}
+.sfondo {
+  background: url("../assets/nicola.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
