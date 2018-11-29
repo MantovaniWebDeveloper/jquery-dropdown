@@ -2,6 +2,8 @@
 var buttonMenu = $('#buttonMenu');
 var nav = $('nav');
 var elemento = $('nav .elemento');
+var dropMenu = $('.dropDownMenu');
+var elementoDropMenu = $('.dropDownMenu .dropDownItem');
 
 console.log(buttonMenu);
 console.log(elemento);
@@ -12,7 +14,13 @@ buttonMenu.click(function(){
   nav.toggle();
 });
 
-//gestisco l'hover
+//gestisco mouse over
 elemento.mouseover(function(){
   console.log("over");
+  $(this).children(dropMenu).show();
+});
+// gestisco mouse out
+nav.mouseout(function(){
+  console.log("drop");
+  $(dropMenu).hide();
 });
